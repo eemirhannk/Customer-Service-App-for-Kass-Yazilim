@@ -1,0 +1,83 @@
+<!-- <h1 style="color: white;">{{mytoken}}</h1> -->
+<div class="row">
+  <div class="col">
+    <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start">
+      <mat-tab
+        label="DAILY"
+        *ngIf="this.apiData?.GeneralSettings?.isActiveCustomerDaily == true"
+      >
+        <div class="container">
+          <div class="centered-div" style="color: white;">
+            Şantiye :
+            {{adminApiDataDaily?.result?.customerBetonHareketList?.[0]?.sCariSantiye}}
+            <br />
+            Plaka :
+            {{adminApiDataDaily?.result?.customerBetonHareketList?.[0]?.sMikserPlaka}}
+            <br />
+            İrsaliye Miktarı :
+            {{adminApiDataDaily?.result?.customerBetonHareketList?.[0]?.ldIrsaliyeMiktar}}
+            <br />
+            İrsaliye Numarası :
+            {{adminApiDataDaily?.result?.customerBetonHareketList?.[0]?.sIrsSeriNo}}
+            <br />
+            <!-- {{ tarihDaily.dtUretimBitBaslangic }} <br />
+                    {{ tarihDaily.dtUretimBitBitis }} <br />
+                    {{ tarihDaily.dtBaslangicPeriod }} <br />
+                    {{ tarihDaily.dtBitisPeriod }} -->
+          </div>
+        </div>
+      </mat-tab>
+      <mat-tab
+        label="MONTHLY"
+        *ngIf="this.apiData?.GeneralSettings?.isActiveCustomerMonthly == true"
+      >
+        <div class="container">
+          <div class="centered-div" style="color: white;">
+            Şantiye :
+            {{adminApiDataMonthly?.result?.customerBetonHareketList?.[0]?.sCariSantiye}}
+            <br />
+            Plaka :
+            {{adminApiDataMonthly?.result?.customerBetonHareketList?.[0]?.sMikserPlaka}}
+            <br />
+            İrsaliye Miktarı :
+            {{adminApiDataMonthly?.result?.customerBetonHareketList?.[0]?.ldIrsaliyeMiktar}}
+            <br />
+            İrsaliye Numarası :
+            {{adminApiDataMonthly?.result?.customerBetonHareketList?.[0]?.sIrsSeriNo}}
+            <br />
+            <!-- {{ tarihMonthly.dtUretimBitBaslangic }} <br />
+                    {{ tarihMonthly.dtUretimBitBitis }} <br />
+                    {{ tarihMonthly.dtBaslangicPeriod }} <br />
+                    {{ tarihMonthly.dtBitisPeriod }} -->
+          </div>
+        </div> </mat-tab
+      >>
+      <mat-tab
+        label="ANNUAL"
+        *ngIf="this.apiData?.GeneralSettings?.isActiveCustomerAnnual == true"
+      >
+        <div class="container">
+          <div class="centered-div" style="color: white;">
+            Başlangıç Tarihi : {{ tarihAnnual.dtUretimBitBaslangic }} <br />
+            Bitiş Tarihi : {{ tarihAnnual.dtUretimBitBitis }} <br />
+            Başlangıç Periyodu : {{ tarihAnnual.dtBaslangicPeriod }} <br />
+            Bitiş Periyodu : {{ tarihAnnual.dtBitisPeriod }} <br />
+            Şantiye :
+            {{adminApiDataAnnual?.result?.customerBetonHareketList?.[0]?.sCariSantiye}}
+            <br />
+            Plaka :
+            {{adminApiDataAnnual?.result?.customerBetonHareketList?.[0]?.sMikserPlaka}}
+            <br />
+            İrsaliye Miktarı :
+            {{adminApiDataAnnual?.result?.customerBetonHareketList?.[0]?.ldIrsaliyeMiktar}}
+            <br />
+            İrsaliye Numarası :
+            {{adminApiDataAnnual?.result?.customerBetonHareketList?.[0]?.sIrsSeriNo}}
+            <br />
+          </div>
+        </div>
+      </mat-tab>
+    </mat-tab-group>
+
+  </div>
+</div>

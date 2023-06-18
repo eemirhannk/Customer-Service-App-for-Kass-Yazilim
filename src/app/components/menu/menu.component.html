@@ -1,0 +1,46 @@
+<div class="container">
+  <div class="tabs">
+    <div class="title" style="margin-bottom: 10px">
+      <label style="font-size: x-large; margin: 2%;font-weight: bold;">ÜRETİM</label>
+    </div>
+    <mat-tab-group mat-align-tabs="start">
+      <mat-tab label="A">
+        <div class="container"></div>
+      </mat-tab>
+      <mat-tab label="B"> <div class="container"></div> </mat-tab>>
+      <mat-tab label="C">
+        <div class="container"></div>
+      </mat-tab>
+    </mat-tab-group>
+  </div>
+</div>
+
+<div class="container menu-container">
+  <div class="title">
+    <label class="menu-text">MENÜ</label>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="d-grid gap-2">
+        <button class="btn btn-success" (click)="goSantiye()">
+            <img src="https://tesislerim.com/Images/icons/Kartlar/ambarlar.png" height="60" width="60"> <br>
+          ŞANTİYELER
+        </button>
+        <button class="btn btn-success" (click)="goCari()">
+            <img src="https://tesislerim.com/Images/icons/Hareketler/carsafrapor.png" height="60" width="60"> <br>
+            CARİ EKSTRE</button>
+      </div>
+    </div>
+    <div class="col">
+      <div class="d-grid gap-2">
+        <button class="btn btn-success" (click)="goBeton()">
+            <img src="https://tesislerim.com/Images/icons/Hareketler/orders.png" height="60" width="60"> <br>
+          BETON SİPARİŞ
+        </button>
+        <button class="btn btn-success" (click)="goKart()">
+            <img src="https://tesislerim.com/Images/icons/Kantar/hareketler.png" height="60" width="60"> <br>
+            KANTAR SİPARİŞ</button>
+      </div>
+    </div>
+  </div>
+</div>

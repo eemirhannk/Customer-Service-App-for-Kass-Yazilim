@@ -1,0 +1,71 @@
+<div class="row">
+  <div class="beton">
+    <div class="wrapper">
+      <div class="container beton-container">
+        <div class="container filter-container">
+          <button (click)="goToMenu()" type="button" class="btn btn-light btn-sm"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i></button>
+          <input
+            style="margin-bottom: 1%"
+            type="text"
+            [(ngModel)]="filterText"
+            (input)="applyFilter()"
+            placeholder="Filtrele"
+          />
+        </div>
+        <div class="container title-container">
+          <div class="title">
+            <h2 class="beton-text">BETON SİPARİŞ</h2>
+            <div class="btn-container">
+              <button class="btn btn-sm" (click)="refreshPage()">
+                <i class="fa fa-refresh font-16"
+                  ><span style="font-weight: bold"> YENİLE</span></i
+                >
+              </button>
+              <button class="btn btn-sm" (click)="openDialog()">
+                <i class="fa fa-plus font-16"
+                  ><span style="font-weight: bold"> YENİ EKLE</span></i
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="recent-payments">
+          <table class="table table-bordered table-stripped">
+            <tr>
+              <th class="ng-binding">id</th>
+              <th class="ng-binding">Başlangıç Tarihi</th>
+              <th class="ng-binding">Bitiş Tarihi</th>
+              <th class="ng-binding">Merkez</th>
+              <th class="ng-binding">Beton Sınıfı</th>
+              <th class="ng-binding">Beton .....</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>07.06.2023</td>
+              <td>16.08.2026</td>
+              <td>SAKARYA</td>
+              <td>A</td>
+              <td>hwejnnhfnm</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>07.06.2023</td>
+              <td>16.08.2026</td>
+              <td>SAKARYA</td>
+              <td>A</td>
+              <td>hwejnnhfnm</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>07.06.2023</td>
+              <td>16.08.2026</td>
+              <td>SAKARYA</td>
+              <td>A</td>
+              <td>hwejnnhfnm</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

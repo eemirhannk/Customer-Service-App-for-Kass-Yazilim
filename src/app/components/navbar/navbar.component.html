@@ -1,0 +1,6 @@
+    <nav [ngClass]="{'my-class': x, 'my-other-class': !x}" class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a style="cursor: pointer;" (click)="toggleSideBar()" class="navbar-brand"><i class="fa fa-bars" aria-hidden="true"></i></a>
+        <p class="timer">{{formatDateTimeToCustomFormat(newDate)}}</p>
+      </div>
+    </nav>

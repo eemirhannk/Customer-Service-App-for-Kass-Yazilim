@@ -1,0 +1,25 @@
+<ng-container *ngIf="isSidebarVisible">
+  <div class="main-box">
+    <div class="side-menu-list">
+      <a style="cursor: pointer;" href="https://tesislerim.com"><img class="img-container" style="height: 50px;text-align: center;" src="https://tesislerim.com/Images/FirmaLogo/f9256593-6392-40b1-ad95-0c4f8ce4bbc3.png" alt="Tesislerim"></a> 
+      <ul class="menu-items">
+        <li (click)="goToMenu()">
+          <img class="image" src="https://tesislerim.com/Images/icons/home.png" alt=""><br />MENU
+        </li>
+        <li (click)="goToKantar()">
+          <img class="image" src="https://tesislerim.com/Images/icons/Kartlar/ambarlar.png" alt=""><br />KANTAR SİPARİŞ
+        </li>
+        <li (click)="goToSantiye()">
+          <img class="image" src="https://tesislerim.com/Images/icons/Beton.png" alt=""><br />ŞANTİYELER
+        </li>
+        <li (click)="goToCari()">
+          <img class="image" src="https://tesislerim.com/Images/icons/raporlar.png" alt=""><br />CARİ EKSTRE
+        </li>
+        <li (click)="goToBeton()">
+          <img class="image" src="https://tesislerim.com/Images/icons/Kantar.png" alt=""><br />BETON SİPARİŞ
+        </li>
+      </ul>
+    </div>
+  </div>
+</ng-container>
+

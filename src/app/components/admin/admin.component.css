@@ -1,0 +1,15 @@
+.container {
+  margin-top: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background-color: grey;
+  border: 5px solid black;
+  text-align: center;
+}
+
+.centered-div {
+  background-color: grey;
+  color: black;
+}

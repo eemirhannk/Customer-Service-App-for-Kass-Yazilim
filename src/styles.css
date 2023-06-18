@@ -1,1 +1,33 @@
-/* You can add global styles to this file, and also import other style files */
+/* Application-wide Styles */
+
+html { 
+  height: 100%; 
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+
+h1 {
+    font-size: 250%;
+  }
+  h2, h3 {
+    color: #444;
+    font-weight: lighter;
+  }
+
+  button {
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+
+  /* everywhere else */
+  * {
+    font-family: Arial, Helvetica, sans-serif;
+  }

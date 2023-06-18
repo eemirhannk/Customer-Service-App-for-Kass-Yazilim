@@ -1,0 +1,120 @@
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+table{
+    padding: 10px;
+}
+th,td {
+    text-align: left;
+    padding: 8px;
+}
+.title-container{
+    box-shadow: 5px 5px 5px 5px grey;
+    background-color: whitesmoke;
+    overflow: hidden;
+}
+.recent-payments{
+    box-shadow: 5px 5px 5px 5px grey;
+    height: 50vh;
+    flex : 5;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+}
+.cari-ekstre{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    align-items: center;
+    height: 100vh;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+.cari-container{
+    margin: 0 !important;
+}
+.btn-sm{
+    color: #808080;
+}
+.btn-sm:hover{
+    background-color: #a8a8a8;
+    color: white;
+}
+.row{
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+.wrapper{
+    width: 80%;
+
+}
+.btn-light{
+    visibility: hidden;
+  }
+
+@media (min-width: 350px) and (max-width: 500px) {
+    .title{
+        display: flex;
+        justify-content: space-between;
+    }
+    table{
+        padding: 10px;
+    }
+    th,td {
+        font-size: small;
+        text-align: left;
+        padding: 8px;
+    }
+    .title-container{
+        background-color: whitesmoke;
+        overflow: hidden;
+    }
+    .recent-payments{
+        height: 40vh;
+        flex: 5;
+        background-color: whitesmoke;
+        display: flex;
+        flex-direction: column;
+        overflow: scroll;
+    }
+    .cari-ekstre{
+        display: flex;
+        width: 100%;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+    .cari-container{
+        margin: 0 !important;
+    }
+    .row{
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+        display: flex;
+        width: 100%;
+    }
+    .wrapper{
+        position: absolute;
+        left: 0;
+        width: 100%;
+    
+    }
+    .cari-text{
+        font-size: 25px;
+        font-weight: 600;
+        margin: 0;
+        padding: 0;
+    }
+    .btn-container{
+        display: flex;
+    }
+    .btn-light{
+        color: black;
+        background-color: #d4d4d4;
+        visibility: visible;
+      }
+    
+}
